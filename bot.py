@@ -1,4 +1,5 @@
 import discord
+import random
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -10,7 +11,8 @@ class MyClient(discord.Client):
             return
 
         if message.content == 'czy':
-            await message.channel.send('tak')
+            lista = ['Tak', 'Nie', 'Może', 'Zależy jak uważasz', 'Jeszcze jak', 'Nigdy w życiu','Twoja stara','ruchasz psa jak sra','Jak najbardziej','Możliwe że tak', 'Może nie','Nie wiem']
+            await message.channel.send(random.choice(lista))
 
 client = MyClient()
 client.run('')
