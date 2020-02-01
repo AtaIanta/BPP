@@ -15,4 +15,4 @@ class MyClient(discord.Client):
             await message.channel.send(random.choice(lista))
 
 client = MyClient()
-client.run('')
+client.run('$token')
