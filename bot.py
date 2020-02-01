@@ -6,9 +6,11 @@ class MyClient(discord.Client):
         print('Zalogowano jako', self.user)
 
     async def on_message(self, message):
-        # don't respond to ourselves
+        
+        # żeby bot nie odpowiadł samemu sobie
         if message.author == self.user:
             return
+        
         elif  message.content.startswith('$stats'):
             url = 'https://bnonews.com/index.php/2020/01/the-latest-coronavirus-cases/' 
             path = '//*[@id="mvp-content-main"]/table[1]/tbody/tr[33]/td[2]/strong'
