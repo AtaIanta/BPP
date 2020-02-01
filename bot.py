@@ -4,7 +4,7 @@ import random
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Zalogowano jako', self.user)
-
+        await self.change_presence(status=discord.Status.online, activity=discord.Game("rucha psa jak sra")
     async def on_message(self, message):
         
         # żeby bot nie odpowiadł samemu sobie
