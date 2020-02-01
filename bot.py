@@ -18,7 +18,7 @@ class MyClient(discord.Client):
             byte_data = response.content 
             source_code = html.fromstring(byte_data)  
             tree = source_code.xpath(path) + source_code.xpath(path2) + source_code.xpath(path3)
-            await message.channel.send('```'+tree[0].text_content() + ' chorych ' +tree[2].replace(" suspected","") + ' podejrzanych ' + tree[1].text_content() + ' zajebanych '+'```') 
+            await message.channel.send('```Chiny: '+tree[0].text_content() + ' chorych, ' +tree[2].replace(" suspected","") + ' podejrzanych, ' + tree[1].text_content() + ' nie żyje '+'```') 
 
         elif (message.content.startswith('Czy') or message.content.startswith('czy')) and message.channel.id == 660169524116717569:
             lista = ['Tak', 'Nie', 'Może', 'Zależy jak uważasz', 'Jeszcze jak', 'Nigdy w życiu','Twoja stara','ruchasz psa jak sra','Jak najbardziej','Możliwe że tak', 'Może nie','Nie wiem']
