@@ -1,5 +1,3 @@
-Tutaj będzie skrypt do treningu modelu.
-Jak również i dane do trenowania.
-Ale to wkrótce.
+Tutaj będą skrypt i dane do treningu modelu, ale to wkrótce.
 
 ![alt text](https://github.com/AtaIanta/BPP/blob/master/brain/dupa.png)
