@@ -1,5 +1,7 @@
 import discord
 import random
+import requests
+from lxml import html   
 
 class MyClient(discord.Client):
     async def on_ready(self):
